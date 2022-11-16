@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Power coders - Registration</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <section class="section-1">
+    <div class="container-1">
+      <a href="index.html"><img src="images/power coder.png" alt="logo"></a>
+      <div class="solid-box">
+        <h1>Registration Form</h1>
+      </div>
+      <h4>Register your Self</h4>
+    </div>
+    <form method="post" name="google-sheet">
+      <!-- <label for="fname">First name:</label><br> -->
+      <br>
+      <input type="text" id="name" name="name" placeholder="Full Name name"><br>
+      <!-- <label for="lname">Last name:</label><br> -->
+      <br>
+      <input type="text" id="uid" name="uid" placeholder="UID"><br>
+      <!-- <label for="fname">First name:</label><br> -->
+      <br>
+      <input type="text" id="email" name="email" placeholder="example@cuchd.in"><br>
+      <!-- <label for="lname">Last name:</label><br> -->
+      <br>
+      <input type="text" id="phone" name="phone" placeholder="Phone">
+      <br>
+      <br>
+      <input type="text" id="department" name="department" placeholder="Department">
+      <br>
+      <br>
+      <!-- <input type="text" id="branches" name="branches" placeholder="Branches"> -->
+
+      <select id="branches" class="branchess" name="branches" required>
+        <option value="#" diasbled selected>Branches</option>
+        <option value="BCA">BCA</option>
+        <option value="BCA AR/VR">BCA AR/VR</option>
+        <option value="BSC">BSC</option>
+        <option value="CS">CS</option>
+        <option value="MCA">MCA</option>
+      </select>
+      <br>
+      <br>
+      <input type="text" id="Section" name="section" placeholder="Section">
+      <br>
+      <br>
+      <input type="text" id="Group" name="group" placeholder="Group">
+      <br>
+
+
+      <button class="btn btn-primary-1 submit-btn" type="submit" name="submit">Submit</button>
+    </form>
+
+
+    <div class="container-5">
+      <div class="icons">
+        <i class="fa-sharp fa-solid fa-house icon"></i>
+        <i class="fa-solid fa-gear icon"></i>
+        <i class="fa-brands fa-github icon"></i>
+        <i class="fa-solid fa-hashtag icon"></i>
+      </div>
+    </div>
+  </section>
+
+
+  <script src="https://kit.fontawesome.com/c8ebca53da.js" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
+
+  <script>
+    const scriptURL =
+      'https://script.google.com/macros/s/AKfycbz_yqENqDd2xp_Ev2QqZX19QyI7c4nEgxxj5zwa9pEiBjdP1c1a7PCIfy02QfYEdp_S/exec'
+    const form = document.forms['google-sheet']
+
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, {
+          method: 'POST',
+          body: new FormData(form)
+        })
+        .then(response => alert("Thanks for Contacting us..! We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>

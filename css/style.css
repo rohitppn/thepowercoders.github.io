@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+:root {
+  --blue: linear-gradient(180deg, #22012B 0%, #450456 100%);
+  --dark-blue: #18033d;
+  --orange:rgb(253, 84, 0)
+  --black: #444;
+  --light-color: #666;
+  --border: .1rem solid rgba(0, 0, 0, .1);
+  --border-hover: .1rem solid var(--black);
+  --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all .2s linear;
+  transition: width none;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 5rem;
+  scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+  width: 1rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--black);
+}
+
+.section-1 img {
+  width: 13rem;
+  background-color: #fff;
+  margin: 3rem;
+  display: block;
+  margin: 0 auto;
+  border: 2px solid rgb(253, 84, 0);
+  border-radius: 10rem;
+}
+
+.section-1  {
+  background: var(--blue);
+  padding-top: 4rem;
+  width: 100vw;
+  height: 85rem;
+}
+
+.section-1 .container-1 h1{
+  color: rgb(253, 84, 0);
+  text-align: center;
+  padding-top:2rem;
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.section-1 .container-1 h4{
+  font-family: 'Poppins', sans;
+  color: rgb(202, 200, 199);
+  text-align: center;
+  padding-top:.5rem;
+  font-size: 1.9rem;
+  position: relative;
+
+}
+
+.section-1 .container-2 .btn-primary-1{
+   width: 19rem;
+   height: 4rem;
+   font-size: 1.6rem;
+   text-shadow: 2px 2px 5px rgb(178, 64, 3);
+   color:white;
+   display:flex;
+   align-items: center;
+   justify-content: center;
+   margin: 3rem auto;
+   background-color: rgb(253, 84, 0);
+   border: .5px solid white;
+   border-radius: 7px;
+   display: block;
+}
+
+.section-1 .container-2 .btn-primary-1:hover{
+  background-color:white;
+  color: rgb(253, 84, 0);
+  box-shadow: 2px 2px 5px rgb(253, 84, 0);
+  text-shadow: none; 
+
+}
+
+.section-1 .container-2{
+  width: 32rem;
+  height: 5.5rem;
+  margin: 5rem auto;
+  border: .5px solid white;
+  padding: .5rem;
+}
+
+.section-1 .container-2 h2{
+  text-align: center;
+  color: #fff;
+  font-size:3rem;
+}
+
+.section-1 .container-2 h4{
+  padding: 1rem;
+  font-size:2rem;
+  text-align: center;
+  color: rgb(193, 193, 193);
+}
+
+.section-1 .container-2 em{
+  color: red;
+}
+
+
+
+.container-3{
+  width: 100%;
+  height: 11rem;
+  margin-top: 30rem;
+  padding: 1rem .1rem;
+  background-color: rgb(242, 65, 0);
+}
+
+.container-3 .icons{
+  text-align: center;
+  font-size:4rem;
+  padding: 2.5rem;
+  margin-left: 2rem;
+  gap: 18%;
+  display: flex;
+  color: rgb(0, 0, 0);
+} 
+
+.container-3 .container-5 .icon:hover{
+  color: white;
+}
+
+
+
+
+
+
+/* page 2  */
+.section-1 .container-1 .solid-box{
+  width: 29rem;
+  height: 5rem;
+  margin: 2.5rem auto;
+  margin-bottom: 0;
+  border-radius: 1rem;
+  border: .5px solid rgb(242, 65, 0);
+
+}
+.section-1 .container-1 .solid-box h1{
+  padding-top: .5rem;
+  text-align: center;
+  color: rgb(255, 80, 16);
+  font-size:2.5rem;
+}
+.section-1 .container-1 h4{
+  margin-top: .3rem;
+}
+
+form{
+  text-align: center;
+  margin: 2rem; 
+}
+
+form #name, #uid, #email, #phone, #department,#branches, #Section, #Group{
+  width: 30rem;
+  height: 3.5rem;
+
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+form .submit-btn{
+  margin-top:2rem;
+  width: 30rem;
+  height: 3.5rem;
+  color: white;
+  text-shadow: 2px 2px 5px rgb(255, 64, 0);
+  background-color:rgb(255, 80, 16);
+  border: 1px solid white;
+  border-radius: .3rem;
+}
+
+form .submit-btn:hover{
+  color: rgb(255, 64, 0);
+  background-color:white;
+  text-shadow: none;
+  box-shadow: 2px 2px 5px rgb(255, 64, 0);
+  box-shadow: 2px;
+}
+
+
+.section-1 .container-5 {
+  width: 100%;
+  height: 11rem;
+  margin-top: 13rem;
+  padding: 1rem .1rem;
+  background-color: rgb(242, 65, 0);
+}
+.container-5 .icons{
+  text-align: center;
+  font-size:4rem;
+  padding: 2.5rem;
+  margin-left: 2rem;
+  gap: 18%;
+  display: flex;
+  color: rgb(0, 0, 0);
+} 
+
+.branchess{
+  color: grey;
+}
